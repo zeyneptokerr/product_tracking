@@ -1,0 +1,6 @@
+uvicorn
+fastapi
+requests
+psycopg2
+schedule
+beautifulsoup4

@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "339d7c0d-5fba-4cae-94b7-7a2417ef7aba",
+		"name": "product_tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-product-tracking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WebSiteName\": \"Trendyol\",\r\n    \"SearchedProduct\": \"roborock s6 maxv\",\r\n    \"TotalFollowUpDays\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:4545/create-product-tracking",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4545",
+					"path": [
+						"create-product-tracking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-product-follow-up-days",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SearchedProduct\": \"roborock s6 maxv\",\r\n    \"TotalFollowUpDaysRemaining\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:4545/update-product-follow-up-days",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4545",
+					"path": [
+						"update-product-follow-up-days"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "0.0.0.0:4545/delete-product-tracking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SearchedProduct\": \"roborock s6 maxv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:4545/delete-product-tracking",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4545",
+					"path": [
+						"delete-product-tracking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
